@@ -1,0 +1,13 @@
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\SystemManagement.Common.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\SystemManagement.Common.pdb
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\PdfSharp.Charting.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\PdfSharp.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\System.ComponentModel.Annotations.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\PdfSharp.xml
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\PdfSharp.Charting.xml
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\de\PdfSharp.resources.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\bin\Debug\de\PdfSharp.Charting.resources.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\obj\Debug\SystemManagement.Common.csproj.CoreCompileInputs.cache
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\obj\Debug\SystemManagement.Common.csproj.CopyComplete
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\obj\Debug\SystemManagement.Common.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Common\obj\Debug\SystemManagement.Common.pdb

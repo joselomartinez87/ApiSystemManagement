@@ -1,0 +1,9 @@
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\bin\Debug\SystemManagement.MethodParameters.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\bin\Debug\SystemManagement.MethodParameters.pdb
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\bin\Debug\SystemManagement.Entities.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\bin\Debug\SystemManagement.Entities.pdb
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\obj\Debug\SystemManagement.MethodParameters.csprojAssemblyReference.cache
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\obj\Debug\SystemManagement.MethodParameters.csproj.CoreCompileInputs.cache
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\obj\Debug\SystemManagement.MethodParameters.csproj.CopyComplete
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\obj\Debug\SystemManagement.MethodParameters.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.MethodParameters\obj\Debug\SystemManagement.MethodParameters.pdb

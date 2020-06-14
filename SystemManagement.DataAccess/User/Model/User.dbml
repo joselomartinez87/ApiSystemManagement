@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="systemManagementAPI" Class="UserDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-07CK1FPQ\JOSELOBD;Initial Catalog=systemManagementAPI;Persist Security Info=True;User ID=sa" SettingsObjectName="SystemManagement.DataAccess.Properties.Settings" SettingsPropertyName="systemManagementAPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spr_getUser" Method="spr_getUser">
+    <Parameter Name="usr_userName" Type="System.String" DbType="VarChar(128)" />
+    <ElementType Name="spr_getUserResult">
+      <Column Name="usrID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="usr_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="usr_userName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_fullName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="usr_documentType" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="usr_numberDocument" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="usr_email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="usr_role" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="rl_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_status" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spr_getUsers" Method="spr_getUsers">
+    <ElementType Name="spr_getUsersResult">
+      <Column Name="usrID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="usr_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="usr_userName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_fullName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="usr_documentType" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="usr_numberDocument" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="usr_password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="usr_role" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="rl_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="usr_status" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spr_setAddBalance" Method="spr_setAddBalance">
+    <Parameter Name="usr_userNameDestiny" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="valueTransfer" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_setUser" Method="spr_setUser">
+    <Parameter Name="usr_userName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_password" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_fullName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_documentType" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="usr_numberDocument" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="usr_email" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_role" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="usr_creationUser" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_updateUser" Method="spr_updateUser">
+    <Parameter Name="usr_userName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_password" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_fullName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_documentType" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="usr_numberDocument" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="usr_email" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_role" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="usr_modificationUser" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_status" Type="System.String" DbType="VarChar(2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_setDeleteBalance" Method="spr_setDeleteBalance">
+    <Parameter Name="usr_userNameDestiny" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="valueTransfer" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <ElementType Name="spr_setDeleteBalanceResult">
+      <Column Name="result" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spr_setTransferBalance" Method="spr_setTransferBalance">
+    <Parameter Name="usr_userNameOrigin" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usr_userNameDestiny" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="valueTransfer" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <ElementType Name="spr_setTransferBalanceResult">
+      <Column Name="result" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

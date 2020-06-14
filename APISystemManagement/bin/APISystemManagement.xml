@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APISystemManagement</name>
+    </assembly>
+    <members>
+        <member name="T:APISystemManagement.Controllers.AuthenticationController">
+            <summary>
+            Controlador de autenticación
+            </summary>
+        </member>
+        <member name="M:APISystemManagement.Controllers.AuthenticationController.Login(SystemManagement.MethodParameters.Controllers.SystemManagementApi.Authentication.LoginIn)">
+            <summary>
+            Login
+            </summary>
+            <remarks>
+            Se valida las credenciales ingresadas
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información del usuario autenticado</returns>
+        </member>
+        <member name="M:APISystemManagement.Controllers.AuthenticationController.CloseSession(SystemManagement.MethodParameters.Authentication.CloseSessionIn)">
+            <summary>
+            CloseSession
+            </summary>
+            <remarks>
+            Responsable de cambiar el estado de la sessión del usuario de activa a inactiva
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información del usuario autenticado</returns>
+        </member>
+        <member name="T:SystemManagement.Controllers.AdminController">
+            <summary>
+            Controlador de usuario
+            </summary>
+        </member>
+        <member name="M:SystemManagement.Controllers.AdminController.CreateUser(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.CreateUserIn)">
+            <summary>
+            CreateUser
+            </summary>
+            <remarks>
+            El usuario queda asociado a un rol y los permisos del mismo
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información del usuario creado</returns>
+        </member>
+        <member name="M:SystemManagement.Controllers.AdminController.UpdateUser(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.UpdateUserIn)">
+            <summary>
+            UpdateUser
+            </summary>
+            <remarks>
+            Se actualiza la información del usuario segun la información ingresada
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Se actualiza la información del usuario segun la información ingresada</returns>
+        </member>
+        <member name="M:SystemManagement.Controllers.AdminController.GetUser(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.GetUserIn)">
+            <summary>
+            GetUser
+            </summary>
+            <remarks>
+            Consulta los usuarios del sistema por el userName
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información del usuario buscado por userName</returns>
+        </member>
+        <member name="M:SystemManagement.Controllers.AdminController.AddBalance(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.AddBalanceIn)">
+            <summary>
+            AddBalance
+            </summary>
+            <remarks>
+            Usuarios administradores adicionan balance a un usuario con el nombre de usuario
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información de la operación</returns>
+        </member>
+        <member name="M:SystemManagement.Controllers.AdminController.DeleteBalance(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.DeleteBalanceIn)">
+            <summary>
+            DeleteBalance
+            </summary>
+            <remarks>
+            Usuarios administradores eliminan balance a un usuario con el nombre de usuario
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información de la operación</returns>
+        </member>
+        <member name="T:SystemManagement.Controllers.UserController">
+            <summary>
+            Controlador de usuario
+            </summary>
+        </member>
+        <member name="M:SystemManagement.Controllers.UserController.GetUser(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.GetUserIn)">
+            <summary>
+            GetUser
+            </summary>
+            <remarks>
+            Consulta los usuarios del sistema por el userName
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información del usuario buscado por userName</returns>
+        </member>
+        <member name="M:SystemManagement.Controllers.UserController.TransferBalance(SystemManagement.MethodParameters.Controllers.SystemManagementApi.User.TransferBalanceIn)">
+            <summary>
+            TransferBalance
+            </summary>
+            <remarks>
+            Consulta los usuarios del sistema por el userName
+            </remarks>
+            <response code="200">Proceso exitoso</response>
+            <response code="400">Error de validación en los parámetros de entrada</response>
+            <response code="500">Excepción no controlada</response> 
+            <returns>Retorna información del usuario buscado por userName</returns>
+        </member>
+    </members>
+</doc>

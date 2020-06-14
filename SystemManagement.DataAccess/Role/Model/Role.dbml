@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="systemManagementAPI" Class="RoleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-07CK1FPQ\JOSELOBD;Initial Catalog=systemManagementAPI;Persist Security Info=True;User ID=sa" SettingsObjectName="SystemManagement.DataAccess.Properties.Settings" SettingsPropertyName="systemManagementAPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spr_setRole" Method="spr_setRole">
+    <Parameter Name="rl_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="rl_name" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="rl_creationUser" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_setRolePermission" Method="spr_setRolePermission">
+    <Parameter Name="rl_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pm_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="rp_creationUser" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_updateRole" Method="spr_updateRole">
+    <Parameter Name="rl_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="rl_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rl_modificationUser" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rl_status" Type="System.String" DbType="VarChar(2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_updateRolePermission" Method="spr_updateRolePermission">
+    <Parameter Name="rpID" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="rl_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pm_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="rp_modificationUser" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rp_status" Type="System.String" DbType="VarChar(2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_getRoleByCode" Method="spr_getRoleByCode">
+    <Parameter Name="rl_code" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="spr_getRoleByCodeResult">
+      <Column Name="rlID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="rl_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="rl_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rl_creationUser" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="rl_creationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rl_modificationUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rl_modificationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rl_status" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

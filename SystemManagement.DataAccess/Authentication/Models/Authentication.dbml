@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="systemManagementAPI" Class="AuthenticationDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-07CK1FPQ\JOSELOBD;Initial Catalog=systemManagementAPI;Persist Security Info=True;User ID=sa" SettingsObjectName="SystemManagement.DataAccess.Properties.Settings" SettingsPropertyName="systemManagementAPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spr_closeSession" Method="spr_closeSession">
+    <Parameter Name="sesID" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_createSession" Method="spr_createSession">
+    <Parameter Name="sesID" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usrID" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_validateSession" Method="spr_validateSession">
+    <Parameter Name="sesID" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="usrID" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <ElementType Name="spr_validateSessionResult">
+      <Column Name="sesID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="usrID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ses_status" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ses_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

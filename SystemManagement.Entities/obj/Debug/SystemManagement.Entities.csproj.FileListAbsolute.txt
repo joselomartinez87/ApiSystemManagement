@@ -1,0 +1,5 @@
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Entities\bin\Debug\SystemManagement.Entities.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Entities\bin\Debug\SystemManagement.Entities.pdb
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Entities\obj\Debug\SystemManagement.Entities.csproj.CoreCompileInputs.cache
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Entities\obj\Debug\SystemManagement.Entities.dll
+E:\JoseMartinez\Personal\SystemManagementAPI\SystemManagement.Entities\obj\Debug\SystemManagement.Entities.pdb

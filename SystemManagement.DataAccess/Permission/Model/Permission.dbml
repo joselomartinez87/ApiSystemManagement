@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="systemManagementAPI" Class="PermissionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-07CK1FPQ\JOSELOBD;Initial Catalog=systemManagementAPI;Persist Security Info=True;User ID=sa" SettingsObjectName="SystemManagement.DataAccess.Properties.Settings" SettingsPropertyName="systemManagementAPIConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spr_getPermissionByCode" Method="spr_getPermissionByCode">
+    <Parameter Name="pm_code" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="spr_getPermissionByCodeResult">
+      <Column Name="pmID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="pm_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="pm_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pm_description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="pm_creationUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pm_creationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pm_modificationUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pm_modificationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pm_status" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spr_getPermissionByRole" Method="spr_getPermissionByRole">
+    <Parameter Name="rl_code" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="spr_getPermissionByRoleResult">
+      <Column Name="pm_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="pm_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rl_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="rl_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rpID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spr_setPermission" Method="spr_setPermission">
+    <Parameter Name="pm_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pm_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pm_description" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="pm_creationUser" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spr_updatePermission" Method="spr_updatePermission">
+    <Parameter Name="pm_code" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="pm_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pm_description" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pm_modificationUser" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pm_status" Type="System.String" DbType="VarChar(2)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
